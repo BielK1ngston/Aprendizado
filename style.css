@@ -156,14 +156,37 @@ image {
 .row {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     background-color: #13131a;
 }
 
 .content {
     display: flex;
     flex: 1 1 45rem;
+    flex-direction: column;
+    color: #fff;
     padding: 2rem;
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+.content p {
+    font-size: 1.2rem
+}
+.content button {
+    width: 8rem;
+    padding: 1rem 0.5rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+    border: 1px solid #d3ad7f;
+    color: #d3ad7f;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+.content button:hover {
+    background-color: #d3ad7f;
+    color: #000;
 }
 
 .name{

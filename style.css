@@ -11,11 +11,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
+nav img{
     padding: 5px;
 }
 
 header{
+    background: #010103;
     position: fixed;
     border-bottom: var(--border);
     display: flex;
@@ -26,22 +27,25 @@ header{
 }
 
 header ul{
-   justify-content: center;
-   display: flex;
-   gap: 15px;
-   align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 header ul li {
-    font-size: 1.1rem;
+    font-size: 1rem;
     list-style: none;   
     transition: border-color .3s ;
     padding: 14px 6px;
+    transition: all .2s ease-in-out;
 }
 
-header ul li:hover {
-    /* background-color: #d3ad7f; */
+header ul li:hover{
+    border-bottom: #d3ad7f solid;
+    transform: scale(1.1);
 }
+
 
 header ul li a{
     color: whitesmoke;
@@ -112,13 +116,13 @@ image {
     padding: 1rem 0;
 }
 
-.get-you {
+.button {
     text-decoration: none;
     background-color: #d3ad7f;
     padding: .5rem 1rem;
 }
 
-.get-you{
+.button{
     width: max-content;
     font-weight: lighter;
     color: white;
@@ -129,7 +133,7 @@ image {
     transition: all .3s ease-in-out;
 }
 
-.get-you:hover{
+.button:hover{
     transform: scale(1.1);
 }
 
@@ -159,7 +163,7 @@ image {
     background-color: #13131a;
 }
 
-.content {
+.content { 
     display: flex;
     flex: 1 1 45rem;
     flex-direction: column;
@@ -168,36 +172,115 @@ image {
 }
 
 .content h1 {
+    padding-top: 2rem;
     font-size: 2rem;
 }
 .content p {
+    padding-top: 1.5rem;
     font-size: 1.2rem
 }
-.content button {
-    width: 8rem;
-    padding: 1rem 0.5rem;
-    margin-top: 4rem;
-    font-size: 1.2rem;
-    background-color: transparent;
-    border: 1px solid #d3ad7f;
-    color: #d3ad7f;
-    cursor: pointer;
-    transition: background-color .2s, color .2s;
-}
-.content button:hover {
-    background-color: #d3ad7f;
-    color: #000;
+
+.content button a{
+    
 }
 
-.name{
+.content button {
+    width: 8rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    background-color: #d3ad7f;
+    border: .5rem solid #d3ad7f;
+    color: white;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.content button:hover {
+    transform: scale(1.1);
+}
+
+.name {
     font-size: 2.5rem;
     text-transform: uppercase;
     color: #eee;
     padding-bottom: 2.5rem;
 }
 
-.name span{
+.name span {
     color: #d3ad7f;
 }
 
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
 
+.menu h3 span {
+    color: #d3ad7f;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: solid #eee;
+    padding: 5rem;
+}
+
+.menu .box:hover{
+    background-color: #eee;
+    color: #010103;
+}
+
+.menu .box-container .box img {
+    height: 6rem;
+    display: flex;
+    
+}
+
+.menu .box-container .box h3 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+}
+
+.box {
+    color: inherit;
+}
+
+.menu .box-container .box .price span {
+    font-size: .9rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.4rem 1.4rem;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #d3ad7f;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}

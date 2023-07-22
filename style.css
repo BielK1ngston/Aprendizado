@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 :root{
     --main-color:#d3ad7f;
     --black:#13131a;
@@ -16,7 +18,7 @@ nav img{
 }
 
 header{
-    background: #010103;
+    background: #0101039c;
     position: fixed;
     border-bottom: var(--border);
     display: flex;
@@ -58,6 +60,11 @@ header ul li a:hover{
     transform: scale(1.5);
     color: #d3ad7f;
 }
+.logo{
+    
+    border: solid black a;
+    border-radius: 5rem;
+}
 
 .search{
     color: white;
@@ -83,7 +90,7 @@ header ul li a:hover{
 }
 
 .image {
-    background-image: url("coffee website/images/home-img.jpeg");
+    background-image: url("coffee website/images-2/home.jpeg");
     width: 100vw;
     background-repeat: no-repeat;
     height: 100vh;
@@ -91,6 +98,7 @@ header ul li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    align-items: flex-start;
     padding-inline: 9rem;
     background-size: cover;
 }
@@ -100,11 +108,35 @@ image {
     
 }
 
-.contet h3{
+.image .contet h3{
+    display: flex;
+    align-items: center;
+    padding-inline: 3rem;
+    background-color: #00000077;
+    font-family: 'Open Sans', sans-serif;
     width: max-content;
     color: white;
     text-transform: uppercase;
-    font-size: 3.5rem;
+    font-size: 7rem;
+    cursor: pointer;
+    border-radius: 0 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.image .contet h3:hover {
+    border-radius: 30px 0;
+}
+
+.contet h3 i span {
+    color: #4b4949;
+    
+}
+
+
+.image .contet h4{
+    padding-top: 3rem;
+    font-size: 5rem;
+    color: #fff;
 }
 
 .home .contet p{
@@ -134,6 +166,9 @@ image {
 }
 
 .button:hover{
+    word-spacing: 1px;
+    transform: scale(1.1);
+    letter-spacing: 1px;
     transform: scale(1.1);
 }
 
@@ -198,6 +233,29 @@ image {
     transform: scale(1.1);
 }
 
+h1 .QuemSomosBox {
+    color: #010103;
+    border: 1px solid white;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .scrollable-text {
+    height: 250px; /* Altura máxima do container de texto com scroll */
+    overflow-y: auto; /* Habilita o scroll vertical */
+    padding: 10px;
+  }
+  
+  p {
+    margin: 0;
+  }
+
 .name {
     font-size: 2.5rem;
     text-transform: uppercase;
@@ -210,6 +268,9 @@ image {
 }
 
 .menu{
+    border-bottom: var(--border);
+    padding: 1.4rem;
+    width: 80;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,6 +327,8 @@ image {
     color: inherit;
 }
 
+
+
 .menu .box-container .box .price span {
     font-size: .9rem;
     text-decoration: line-through;
@@ -288,4 +351,64 @@ image {
     word-spacing: 1 px;
     transform: scale(1.1);
     letter-spacing: 1px;
+}
+
+.contato {
+    padding: 2rem 7%;
+}
+
+.contato h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding: 1.4rem;
+}
+
+.contato h4 {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 1.4rem;
+}
+
+.c-email {
+    cursor: pointer;
+    padding: 14px;
+    color:rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.c-whats {
+    cursor: pointer;
+    padding: 14px;
+    color:rgb(255, 255, 255);
+    font-size: 3rem;
+}
+
+.whatsapp-link {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+}
+
+.fa-whatsapp {
+    margin-top: 16px;
+}
+
+.seguro {
+    width: 5rem;
+    margin: 2rem 5rem;
 }
